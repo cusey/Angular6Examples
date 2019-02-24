@@ -5,14 +5,15 @@ h1{
 input{
   margin: 10px;
 }
-#username{
-  margin-left: 34px;
+
+label{
+  font-size: x-large;
 }
 
 #login{
   background-color: lightsteelblue;
-  width: 350px;
-  height: 250px;
+  width: 500px;
+  height: 400px;
   float: left;
   margin: 20px;
 }

@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Jersey National Bank (JNB)!');
+    expect(compiled.querySelector('h1').textContent).toContain('Jersey National Bank (JNB)');
   });
 });

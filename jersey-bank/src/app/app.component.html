@@ -3,8 +3,25 @@
   <div style="float:left">
     <img src="assets/img/decorative-flower-57-202517.png" >
   </div>
-  <h1>Welcome to {{ title }}!</h1>
+  <h1>{{ title }}</h1>
 </div>
 
+<div id="login" class="container">
 
-<router-outlet></router-outlet>
+  <div>
+    <label for="username">User Name </label>
+    <input id="username" type="text">
+  </div>
+
+  <div>
+    <label for="password">User Password</label>
+    <input id="password" type="text">
+  </div>
+
+  <div>
+    <button class="btn btn-primary" type="submit">Sign In</button>
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+  </div>
+
+</div>
+

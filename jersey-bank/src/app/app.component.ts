@@ -19,10 +19,7 @@ export class AppComponent {
   }
 
   signUp() {
-    this.router.navigate(['/sign-up'], {
-        queryParams: { type: 'New'}
-      }
-    );
+    this.isOn = 1;
   }
 
 }

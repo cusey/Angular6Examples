@@ -21,7 +21,7 @@ import { LocationsComponent } from './locations/locations.component';
       {
         path: 'app-locations',
         component: LocationsComponent
-      }
+      },
     ])
   ],
   providers: [],

@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'Jersey National Bank';
+  isOn = 1;
 
   constructor(private router: Router) { }
 

@@ -7,5 +7,5 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Jersey National Bank (JNB)';
+  title = 'Jersey National Bank';
 }

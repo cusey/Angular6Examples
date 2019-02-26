@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-locations',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsComponent implements OnInit {
 
-  constructor() { }
+  branches: any;
+
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit() {
+
+    this.http.get( 'http://localhost:3011/branch' )
+      .subscribe( (data) => {
+        console.log(data);
+        this.branches = data;
+      });
   }
 
 }

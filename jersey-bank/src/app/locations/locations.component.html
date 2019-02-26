@@ -1,3 +1,25 @@
-<p>
-  locations works!
-</p>
+<ul *ngFor = "let branch of branches">
+  <li>
+    <table>
+      <tr>
+        <td colspan="4">{{branch.branch_name}} </td>
+      </tr>
+      <tr>
+        <td colspan="4">{{branch.address1}} </td>
+      </tr>
+      <tr>
+        <td colspan="4">{{branch.address2}} </td>
+      </tr>
+      <tr>
+        <td >{{branch.city}}</td>
+        <td >, </td>
+        <td >{{branch.state}}</td>
+        <td >{{branch.zip_code}}</td>
+      </tr>
+      <tr>
+        <td colspan="4">{{branch.phone_number}} </td>
+      </tr>
+    </table>
+
+  </li>
+</ul>

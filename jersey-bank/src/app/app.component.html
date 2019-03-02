@@ -29,9 +29,11 @@
             type="text"
             class="form-control">
 
-        </div>
+          <div *ngIf="submitted && lf.username.status === 'INVALID'" >
+            <div class="text-danger" *ngIf="lf.username.errors.required">Users Name is required.</div>
+          </div>
 
-        <div *ngIf="usernameRequired==1" class="alert alert-danger"  >Users Name is required</div>
+        </div>
 
         <div class="form-group">
           <label for="password">User Password</label>
@@ -40,10 +42,11 @@
             id="password"
             type="text"
             class="form-control">
-          <div *ngIf="lf.username.status === 'INVALID'" class="invalid-feedback">
-            <div *ngIf="lf.password.errors.required">Password is required</div>
-            <div *ngIf="lf.password.errors.minlength">Password must be at least 6 characters</div>
+          <div *ngIf="submitted && lf.password.status === 'INVALID'" >
+            <div class="text-danger" *ngIf="lf.password.errors.required">Password is required.</div>
+            <div class="text-danger" *ngIf="lf.password.errors.minlength">Password must be at least 6 characters.</div>
           </div>
+
         </div>
 
         <div>

@@ -31,6 +31,7 @@
 
           <div *ngIf="submitted && lf.username.status === 'INVALID'" >
             <div class="text-danger" *ngIf="lf.username.errors.required">Users Name is required.</div>
+            <div class="text-danger" *ngIf="lf.username.errors.cannotContainSpace">User Name cannot contain space.</div>
           </div>
 
         </div>

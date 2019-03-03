@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
+// import custom validator to validate that string does not contains a space
+import { CannotContainSpace} from './custom.validator';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,6 +22,8 @@ export class AppComponent implements OnInit {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]]
+    }, {
+      validator: CannotContainSpace('username')
     });
   }
 

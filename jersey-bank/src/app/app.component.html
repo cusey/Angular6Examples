@@ -62,49 +62,23 @@
       <div id="signUp" *ngIf="isOn==2" class="container">
 
         <div class="form-group">
-          <label for="username">Title </label>
+          <label for="newname">User Name</label>
           <input
-            formControlName="title"
-            id="title"
+            formControlName="newname"
+            id="newname"
             type="text"
             class="form-control">
         </div>
 
         <div class="form-group">
-          <label for="username">First Name </label>
+          <label for="newpassword">Password</label>
           <input
-            formControlName="firstname"
-            id="firstname"
+            formControlName="newpassword"
+            id="newpassword"
             type="text"
             class="form-control">
         </div>
 
-        <div class="form-group">
-          <label for="password">Middle Name</label>
-          <input
-            formControlName="middlename"
-            id="middlename"
-            type="text"
-            class="form-control">
-        </div>
-
-        <div class="form-group">
-          <label for="password">Last Name</label>
-          <input
-            formControlName="lastname"
-            id="lastname"
-            type="text"
-            class="form-control">
-        </div>
-
-        <div class="form-group">
-          <label for="password">Social Security Number</label>
-          <input
-            formControlName="ssn"
-            id="ssn"
-            type="text"
-            class="form-control">
-        </div>
 
         <div>
           <button class="btn btn-primary" (click)="signUp()" >Finish</button>

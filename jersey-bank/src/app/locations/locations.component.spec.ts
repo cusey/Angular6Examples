@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 import { LocationsComponent } from './locations.component';
 
 describe('LocationsComponent', () => {
@@ -8,6 +10,9 @@ describe('LocationsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        HttpClientTestingModule
+      ],
       declarations: [ LocationsComponent ]
     })
     .compileComponents();
@@ -18,11 +23,9 @@ describe('LocationsComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-  /*
-  it('should create', inject() => {
-    // TODO: NullInjectorError: No provider for HttpClient!
-    // I tried changing test.ts and app.module.ts
-    // expect(component).toBeTruthy();
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
-  */
+
 });
